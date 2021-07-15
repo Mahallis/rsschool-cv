@@ -46,3 +46,8 @@ function fizzbuzz(n)
 ## Education
 
 1. CS50’s Web Programming with Python and JavaScript
+
+## Languages
+
+1. Russian (Native)
+2. English (B2 - Upper Intermediate. In 2019 passed Cambridge University exam "First Certificate in English")
