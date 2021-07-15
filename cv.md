@@ -42,3 +42,7 @@ function fizzbuzz(n)
   return result
 }
 ```
+
+## Education
+
+1. CS50’s Web Programming with Python and JavaScript
