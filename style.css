@@ -1,0 +1,32 @@
+/* Reset default settings */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Encode Sans SC', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.wrapper{
+    width: 50%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    flex: 1 0 auto;
+}
+
+.header__title {
+    border-bottom: 1px solid white;
+}
+
+footer{
+    text-align: center;
+}
