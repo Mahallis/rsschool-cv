@@ -15,16 +15,22 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <header>
+            <header class="header">
+                <img class="header__photo" src="My_photo3.png" alt="My photo">
                 <div class="header__title">
                     <h1 >Samir Tagiev</h1>
                     <p>Junior Front-end Develloper</p>
                 </div>
-                <img class="header__photo" src="My_photo3.png" alt="My photo">
+                <ul class="header__contact-list">
+                    <li>Email: tseo62546@gmail.com</li>
+                    <li>Phone: +7 929 222 61 06</li>
+                    <li>GitHub: <a href="https://github.com/Mahallis">@Mahallis</a></li>
+                    <li>Vkontakte: <a href="https://vk.com/mahallis">Samir Tagiev</a> </li>
+                </ul>
             </header>
-            <nav>
-                <ul class="nav__list">
-                    <li><a href="#">Info</a></li>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li><a href="#info">Info</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Code Examples</a></li>
                     <li><a href="#">Education</a></li>
@@ -32,6 +38,25 @@
                     <li><a href="#">Contacts</a></li>
                 </ul>
             </nav>
+            <main class="main">
+                <section class="main__info" id="info">
+                    <p>I want to become a front-end developer. In order to reach this goal I’ve started to learn web technologies on my own a year ago.
+                        For now I’ve build a web site from a scratch for local company "VDPO YANAO" using HTML, CSS,
+                        JavaScript and Django for backend. I also developed design for that site.</p>
+                </section>
+                <section class="main__skills">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SASS</li>
+                        <li>JavaScript</li>
+                        <li>Figma</li>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Git</li>
+                    </ul>
+                </section>
+            </main>
         </div>
         <footer>
             phone: +7 929 222 61 06 | email: tseo62546@gmail.com
