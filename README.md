@@ -1,1 +1,1 @@
-# rsschool-cv
+https://mahallis.github.io/rsschool-cv/
