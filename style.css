@@ -11,6 +11,7 @@ a{
 }
 
 body{
+    position: relative;
     font-family: 'Encode Sans SC', sans-serif;
     background-color: black;
     color: rgba(255, 255, 255, 0.9);
@@ -53,7 +54,6 @@ body{
 .header__photo:hover{
     transition: background ease-in-out 0.1s;
     background: white;
-    transform: scale(-1, 1);
 }
 
 .header__contact-list {
@@ -103,6 +103,10 @@ body{
     line-height: 28px;
 }
 
+main p{
+    text-align: justify;
+}
+
 section{
     margin-bottom: 30px;
 }
@@ -112,10 +116,12 @@ section{
     border-bottom: 8px ridge #000;
 }
 
-.main__info{
+.main__background_white{
     background-color: rgba(255, 255, 255, 0.9);
     color: black;
-    text-align: justify;
+}
+
+.main__info{
     border-radius: 3px;
     padding: 5px;
 }
@@ -133,20 +139,29 @@ section{
     margin-bottom: 10px;
 }
 
+pre{
+    border-left: 5px solid rgba(0, 0, 0, 0.596);
+    font-size: 15px;
+    line-height: 1.2;
+}
+
 /*! Footer */
 
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
 }
 
 footer > *{
+    font-weight: bold;
     margin-left: 20px;
+    color: black;
 }
 
 footer img{
     border-radius: 3px;
     width: 75px;
-    background-color: rgb(255, 255, 255);
 }

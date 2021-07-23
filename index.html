@@ -32,18 +32,18 @@
                 <ul class="navigation__list">
                     <li><a href="#info">Info</a></li>
                     <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#">Code Examples</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#CodeExamples">Code Examples</a></li>
+                    <li><a href="#Experience">Experience</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Languages">Languages</a></li>
                 </ul>
             </nav>
             <main class="main">
-                <section class="main__info" id="info">
+                <section class="main__info main__background_white" id="info">
                     <h2 class="section-title">Info</h2>
-                    <p>I want to become a front-end developer. In order to reach this goal I’ve started to learn web technologies on my own a year ago.
-                        For now I’ve build a web site from a scratch for local company "VDPO YANAO" using HTML, CSS,
-                        JavaScript and Django for backend. I also developed design for that site.</p>
+                    <p>I'm 26, live in Noyabrsk where I work as a corporate lowyer since 2017. I've started my journey to coding three years ago from learning Python, and then
+                        a year ago I decided to become a front-end developer. In order to reach this goal I’ve started to learn web technologies on my own such as HTML,
+                        CSS and JavaScript. <br> I love to learn and don't afraid of difficulties.</p>
                 </section>
                 <section class="main__skills" id="Skills">
                     <h2 class="section-title">Skills</h2>
@@ -56,6 +56,52 @@
                         <li>Python</li>
                         <li>Django</li>
                         <li>Git</li>
+                    </ul>
+                </section>
+                <section class="main__code-examples main__background_white" id="CodeExamples">
+                    <h2 class="section-title">Code Examples</h2>
+                    <h4>Fizz Buzz app</h4>
+<pre>
+<code>
+<b>function</b> fizzbuzz(n){
+    <b>let</b> result = []
+    <b>for</b>(i = 1; i &lt;= n; i++){
+        <b>if</b> (n % 3 == 0 && i % 5 == 0){
+        result.push("FizzBuzz")
+        } else if (i % 3 == 0){
+        result.push("Fizz")
+        } else if (i % 5 == 0){
+        result.push("Buzz")
+        } else{
+        result.push(i)
+        }
+    }
+    <b>return</b> result
+    }
+</code>
+</pre>
+                </section>
+                <section class="main__experience" id="Experience">
+                    <h2 class="section-title">Experience</h2>
+                    <p>For now I’ve build a web site from a scratch for local company <a href="https://vdpo-yanao.ru/">"VDPO YANAO"</a> using HTML, CSS,
+                        JavaScript and Django for backend. I also developed design for that site in Figma. I used media queries, so pages are adaptive
+                        and change depending on screen size. Also I've embed rss feed to the main page.</p>
+                </section>
+                <section class="main__education main__background_white" id="Education">
+                    <h2 class="section-title">Education</h2>
+                    <p>I have a Bachelor's degree in law. But since I learn programming on my own I don't have classic education in computer science or
+                        other tech education. But I finished Harvard University course <b>"CS50’s Web Programming with Python and JavaScript"</b>
+                        and read related books:</p> <br>
+                        <ul>
+                            <li><b>"Web Design Playground. HTML + CSS the Interactive Way" by Paul McFedries</b></li>
+                            <li><b>"Get Programming with JavaScript" by John R. Larsen</b></li>
+                        </ul>
+                </section>
+                <section class="main__languages" id="Languages">
+                    <h2 class="section-title">Languages</h2>
+                    <ul>
+                        <li>Russian (Native)</li>
+                        <li>English (B2 - Upper Intermediate. In 2019 passed Cambridge University exam “First Certificate in English”)</li>
                     </ul>
                 </section>
             </main>
