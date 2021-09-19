@@ -42,4 +42,4 @@ addEventListener('resize', () => {if (window.innerWidth >= 700){
     body.classList.remove('active')
 }})
 
-// alert('Для Вашего удобства вывел самопроверку, а также ссылку на PR в консоль. ')
+alert('Для Вашего удобства вывел самопроверку, а также ссылку на PR в консоль. ')
