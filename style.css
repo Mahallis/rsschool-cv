@@ -81,12 +81,16 @@ body{
     margin-bottom: 30px;
 }
 
-.navigation_disabled{
+.navigation-mobile{
     display: none;
 }
 
+.navigation_disabled{
+    left: 100%;
+}
+
 .navigation_enabled{
-    display: block;
+    left: 0%;
 }
 
 .navigation__list {
@@ -137,6 +141,7 @@ main p{
 section{
     margin-bottom: 30px;
     padding: 0 10px;
+    border-radius: 3px;
 }
 
 .section-title{
@@ -147,10 +152,6 @@ section{
 .main__background_white{
     background-color: rgba(255, 255, 255, 0.9);
     color: black;
-}
-
-.main__info{
-    border-radius: 3px;
 }
 
 .main__skills>ul{
@@ -171,6 +172,57 @@ pre{
     font-size: 15px;
     line-height: 1.2;
     overflow: scroll;
+}
+
+.main__experience-examples {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.main__experience-examples__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    transition: all ease-in-out 0.3s;
+}
+
+.main__experience-examples__item:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    transition: all ease-in-out 0.3s;
+}
+
+.main__experience-examples__item h6 {
+    font-size: 16px;
+}
+
+.main__experience-examples__item img {
+    /* Change width after fixing other parts */
+    width: 100%;
+}
+
+.main__experience-examples__item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__experience-examples__technologies {
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+}
+
+.main__experience-examples__technologies p {
+    background-color: rgba(15, 163, 168, 0.9);
+    border-radius: 0 5px 0 5px;
+    padding: 4px;
+    margin-right: 10px;
 }
 
 /*! Footer */
@@ -220,6 +272,7 @@ footer img{
     pre{
         font-size: 12px;
     }
+
 }
 
 @media (max-width: 700px){
@@ -233,7 +286,6 @@ footer img{
         top: 0;
         background-color: black;
         border-bottom: none;
-
     }
 
     .header__title{
@@ -289,12 +341,13 @@ footer img{
     }
 
     .navigation-mobile{
+        display: block;
         position: fixed;
-        left: 0;
         z-index: 15;
         height: 100%;
         width: 100%;
         background-color: black;
+        transition: all ease-in-out 0.5s;
     }
 
     .navigation__list {
@@ -303,6 +356,24 @@ footer img{
 
     .main__skills>ul{
         font-size: 20px;
+    }
+
+    .main__experience-examples__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .main__experience-examples__item h6 {
+        font-size: 12px;
+    }
+
+
+    .main__experience-examples {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
