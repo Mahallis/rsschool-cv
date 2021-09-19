@@ -314,26 +314,48 @@ footer img{
         background-color: white;
         width: 48px;
         height: 6px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .hamburger-menu_active{
+        background-color: transparent;
+        transition: all ease-in-out 0.3s;
     }
 
     .hamburger-menu::before{
         position: absolute;
+        transform: rotate(0);
         content: '';
         top: 0;
         left: 0;
         background-color: white;
         width: 48px;
         height: 6px;
+        transition: transform 0.15s, top 0.15s ease-in-out 0.15s;
+        }
+
+    .hamburger-menu_active::before{
+        top: 15px;
+        transform: rotate(45deg);
+        transition: top 0.15s ease-in-out, transform 0.15s ease-in-out 0.15s;
     }
 
     .hamburger-menu::after{
         position: absolute;
+        transform: rotate(0);
         content: '';
         bottom: 0;
         left: 0;
         background-color: white;
         width: 48px;
         height: 6px;
+        transition: transform 0.15s, bottom 0.15s ease-in-out 0.15s;
+    }
+
+    .hamburger-menu_active::after{
+        bottom: 15px;
+        transform: rotate(-45deg);
+        transition: bottom 0.15s ease-in-out, transform 0.15s ease-in-out 0.15s;
     }
 
     .navigation-desktop{
