@@ -9,10 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/mono-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>CV | Samir Tagiev</title>
 </head>
 
-<body>
+<body class="">
     <div class="wrapper">
         <div class="container">
             <header class="header">
@@ -27,7 +30,26 @@
                     <li>GitHub: <a href="https://github.com/Mahallis">@Mahallis</a></li>
                     <li>Vkontakte: <a href="https://vk.com/mahallis">Samir Tagiev</a> </li>
                 </ul>
+                <div class="hamburger-menu-container">
+                    <div class="hamburger-menu"></div>
+                </div>
             </header>
+            <nav class="navigation navigation-mobile navigation_disabled">
+                <ul class="navigation__list">
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#CodeExamples">Code Examples</a></li>
+                    <li><a href="#Experience">Experience</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Languages">Languages</a></li>
+                </ul>
+                <ul class="navigation-contacts">
+                    <li>Email: tseo62546@gmail.com</li>
+                    <li>Phone: +7 929 222 61 06</li>
+                    <li>GitHub: <a href="https://github.com/Mahallis">@Mahallis</a></li>
+                    <li>Vkontakte: <a href="https://vk.com/mahallis">Samir Tagiev</a> </li>
+                </ul>
+            </nav>
             <nav class="navigation navigation-desktop">
                 <ul class="navigation__list">
                     <li><a href="#info">Info</a></li>
@@ -62,7 +84,7 @@
                     <h2 class="section-title">Code Examples</h2>
                     <h4>Human Readable Number</h4>
 <pre>
-<code>
+<code class="JavaScript">
 function toReadable (number) {
     let first = {
         0: "zero",
@@ -101,11 +123,11 @@ function toReadable (number) {
         9: "ninety"
     };
 
-    if (number < 10){
+    if (number &lt; 10){
         return first[number];
-    }else if(number < 100){
+    }else if(number &lt; 100){
         let split2Num = number.toString().split('');
-        if(number < 20){
+        if(number &lt; 20){
             return second[number];
         } else{
             if(split2Num[1] === '0'){
@@ -139,6 +161,9 @@ function toReadable (number) {
                             and change depending on screen size. Also I've embed rss feed to the main page.
                             Also while studying at JS/FE PRE-SCHOOL I've done Museum and Vertical slider tasks as well as algorythms and codewars katas.
                         </p>
+                        <div class="main__experience-examples">
+                            
+                        </div>
                 </section>
                 <section class="main__education main__background_white" id="Education">
                         <h2 class="section-title">Education</h2>
@@ -167,6 +192,7 @@ function toReadable (number) {
             <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="RSSchool-Logo"></a>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
